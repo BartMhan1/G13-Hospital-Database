@@ -1,0 +1,21 @@
+-- ============================================================================
+-- G13 Hospital Database System - Schema Creation
+-- File: sql/01_schema/create_tables.sql
+-- Description: Creates all base tables, primary keys, foreign keys, 
+--              and integrity constraints for the Hospital Database.
+-- ============================================================================
+
+-- Create schema / database if required (uncomment if needed)
+-- CREATE DATABASE HospitalDB;
+-- USE HospitalDB;
+
+-- TODO: Define tables here. Example:
+-- CREATE TABLE Patients (
+--     PatientID INT PRIMARY KEY,
+--     FirstName VARCHAR(50) NOT NULL,
+--     LastName VARCHAR(50) NOT NULL,
+--     DOB DATE,
+--     Gender CHAR(1),
+--     Phone VARCHAR(15),
+--     Address VARCHAR(100)
+-- );

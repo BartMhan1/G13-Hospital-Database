@@ -1,0 +1,13 @@
+-- ============================================================================
+-- G13 Hospital Database System - Database Views
+-- File: sql/05_views_triggers/views.sql
+-- Description: Creates convenient abstractions and secure views for data access
+--              (e.g., patient records, scheduling, billing summaries).
+-- ============================================================================
+
+-- TODO: Implement database views here. Example:
+-- CREATE VIEW PatientSummary AS
+-- SELECT p.PatientID, p.FirstName, p.LastName, a.AppointmentDate, d.LastName AS DoctorName
+-- FROM Patients p
+-- JOIN Appointments a ON p.PatientID = a.PatientID
+-- JOIN Doctors d ON a.DoctorID = d.DoctorID;
