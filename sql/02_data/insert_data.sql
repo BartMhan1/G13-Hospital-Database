@@ -467,7 +467,7 @@ VALUES
     ),
 
     (
-        15,
+        9,
         3,
         DATE_ADD(CURDATE(), INTERVAL 1 DAY),
         '13:30:00',
@@ -1083,7 +1083,7 @@ VALUES
     ),
 
     (
-        15,
+        9,
         15,
         150.00,
         DATE_ADD(CURDATE(), INTERVAL 1 DAY),
