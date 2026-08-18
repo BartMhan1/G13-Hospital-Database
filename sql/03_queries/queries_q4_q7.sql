@@ -1,5 +1,6 @@
 USE G13_hospital_db;
 
+-- QUESTION 4
 
 SELECT
     G13_patients.patient_id,
@@ -9,9 +10,10 @@ FROM G13_patients
 LEFT JOIN G13_appointments
     ON G13_patients.patient_id = G13_appointments.patient_id
 WHERE G13_appointments.appointment_id IS NULL;
--- LEFT JOIN keeps all patients, and IS NULL means no appointment was found.
 
 
+
+-- QUESTION 5
 
 SELECT
     MONTH(G13_appointments.appointment_date) AS appointment_month,
@@ -21,6 +23,10 @@ SELECT
 FROM G13_appointments
 GROUP BY MONTH(G13_appointments.appointment_date)
 ORDER BY appointment_month;
+
+
+
+-- QUESTION 6
 
 SELECT
     G13_appointments.appointment_id,
@@ -36,7 +42,11 @@ JOIN G13_patients
 JOIN G13_doctors
     ON G13_appointments.doctor_id = G13_doctors.doctor_id
 ORDER BY G13_appointments.appointment_id;
+-- The first JOIN connects each appointment to its patient.
+-- The second JOIN connects each appointment to its doctor.
 
+
+-- QUESTION 7
 
 SELECT
     G13_patients.*,
