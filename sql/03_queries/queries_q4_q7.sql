@@ -42,8 +42,7 @@ JOIN G13_patients
 JOIN G13_doctors
     ON G13_appointments.doctor_id = G13_doctors.doctor_id
 ORDER BY G13_appointments.appointment_id;
--- The first JOIN connects each appointment to its patient.
--- The second JOIN connects each appointment to its doctor.
+
 
 
 -- QUESTION 7
