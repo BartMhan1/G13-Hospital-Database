@@ -146,3 +146,5 @@ CREATE TABLE G13_admissions (
     )
 );
 DESCRIBE G13_admissions;
+
+SHOW TABLES;
