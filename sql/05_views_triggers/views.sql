@@ -13,14 +13,6 @@ JOIN G13_doctors d
     
 SELECT * FROM vw_patient_appointments;
 
-CREATE TABLE IF NOT EXISTS G13_doctor_user_map (
-    mysql_username VARCHAR(100) PRIMARY KEY,
-    doctor_id INT NOT NULL,
-
-    FOREIGN KEY (doctor_id)
-        REFERENCES G13_doctors(doctor_id)
-);
-
 CREATE OR REPLACE
 SQL SECURITY DEFINER
 VIEW vw_doctor_schedule AS

@@ -147,4 +147,13 @@ CREATE TABLE G13_admissions (
 );
 DESCRIBE G13_admissions;
 
+CREATE TABLE IF NOT EXISTS G13_doctor_user_map (
+    mysql_username VARCHAR(100) PRIMARY KEY,
+    doctor_id INT NOT NULL,
+
+    FOREIGN KEY (doctor_id)
+        REFERENCES G13_doctors(doctor_id)
+);
+DESCRIBE G13_doctor_user_map;
+
 SHOW TABLES;
